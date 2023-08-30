@@ -20,17 +20,16 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              'img/bear.jpg',
-              width: 300,
-              height: 300,
+              'img/bear.png',
+              width: 250,
+              height: 250,
               fit: BoxFit.cover,
             ),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 20),
             Container(
               padding: EdgeInsets.all(20),
-              width: 300,
+              width: 400,
+              height: 250,
               decoration: BoxDecoration(
                 color: Color.fromARGB(255, 3, 82, 147),
                 borderRadius: BorderRadius.circular(20),
