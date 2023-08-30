@@ -6,52 +6,45 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: const Text('My biography'),
-          titleTextStyle: const TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-          centerTitle: true,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: const Text('My biography'),
+        titleTextStyle: const TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
         ),
-        body: const Center(
-          child: Column(
-            children: Image.asset(
-              'dd.jpg',
-              fit: BoxFit.cover,
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Image.asset(
+              'img/bear.jpg',
               width: 300,
               height: 300,
+              fit: BoxFit.cover,
             ),
-            children: <Widget>[
-              OutlinedCardExample(),
-            ],
-          ),
-        ));
-  }
-}
-
-class OutlinedCardExample extends StatelessWidget {
-  const OutlinedCardExample({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Card(
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          side: BorderSide(
-            color: Colors.black,
-          ),
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-        ),
-        child: SizedBox(
-          width: 300,
-          height: 100,
-          child: Center(
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              padding: EdgeInsets.all(20),
+              width: 300,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(255, 3, 82, 147),
+                borderRadius: BorderRadius.circular(20),
+              ),
               child: Text(
-                  'Я макс веб-разработчик и мне 20 лет :) \n І я люблю піцу :) \n Спасибо за внимание! :)')),
+                'Черепашки-ниндзя — вымышленная команда из четырёх мутировавших антропоморфных черепах-подростков: Леонардо, Рафаэля, Донателло и Микеланджело (названных в честь четырёх художников эпохи Возрождения), которые обучаются искусству ниндзюцу со своим сэнсэем, крысой-мутантом, мастером Сплинтером. Устроив свою базу в канализации Нью-Йорка, они сражаются со злом на улицах города.',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
