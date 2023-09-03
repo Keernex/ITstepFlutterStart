@@ -12,7 +12,7 @@ class IntroScreen extends StatelessWidget {
         body: Stack(
           children: [
             Image.asset(
-              'img/intro_fon/CoffeeIcon.png',
+              'assets/back/back_intro.png',
               fit: BoxFit.cover,
               width: MediaQuery.of(context).size.width,
             ),
@@ -21,58 +21,56 @@ class IntroScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
-                    'Coffee so good,\n your taste buds\n will love it.',
+                    "Coffee so good,\n your taste buds\n will love it.",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.sora(
-                      fontSize: 34,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 15),
-                  Text(
-                    'The best grain, the finest roast,\n the powerful flavor.',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.sora(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  ElevatedButton(
-                    onPressed: () {
-                      Get.toNamed('/home');
-                    },
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                        const Color(0xFFC67C4E),
-                      ),
-                      fixedSize: MaterialStateProperty.all<Size>(
-                        const Size(320, 65),
-                      ),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(16),
-                          side: const BorderSide(
-                            color: Colors.black,
-                          ),
-                        ),
-                      ),
-                    ),
-                    child: Text(
-                      'Get Started',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.sora(
-                        fontSize: 16,
+                        fontSize: 34,
                         fontWeight: FontWeight.w600,
-                        color: Colors.white,
+                        color: Colors.white),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "The best grain, the finest roast,\n the powerful flavor.",
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.sora(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        color: const Color(0xFFA9A9A9)),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 50),
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Get.toNamed('/home');
+                      },
+                      style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              const Color(0xFFC67C4E)),
+                          fixedSize: MaterialStateProperty.all<Size>(
+                              const Size(320, 65)),
+                          shape:
+                              MaterialStateProperty.all<RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ))),
+                      child: Text(
+                        "Get Started",
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.sora(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white),
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

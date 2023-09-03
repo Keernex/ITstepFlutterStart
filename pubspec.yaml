@@ -1,4 +1,4 @@
-name: itstep_flutter_start
+name: flutter_coffee_store
 description: A new Flutter project.
 publish_to: 'none'
 version: 0.1.0
@@ -9,11 +9,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  get : ^4.6.5
+  get: ^4.6.5
   flutter_svg: ^2.0.7
   google_fonts: ^5.1.0
   dropdown_button2: ^2.3.8
-
+  cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
@@ -23,5 +23,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - img/intro_fon/CoffeeIcon.png
-    - img/intro_fon/CoffeeIcon.svg
+    - assets/back/back_intro.png
+    - assets/icons/bean.png
+    - assets/icons/milk.png
+    - assets/icons/Home.svg
+    - assets/icons/Heart.svg
+    - assets/icons/Bag.svg
+    - assets/icons/Notification.svg
+    - assets/icons/Search.svg
+    - assets/icons/Settings.svg
+    - assets/icons/Bean.svg
+    - assets/icons/Milk.svg
+    - assets/img/CardBanner.jpg
