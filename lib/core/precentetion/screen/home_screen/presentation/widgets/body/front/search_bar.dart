@@ -43,7 +43,7 @@ class _SearchbarState extends State<Searchbar> {
             const SizedBox(width: 10),
             InkWell(
               onTap: () {
-                print('Tap on Settings');
+                //print('Tap on Settings');
               },
               borderRadius: BorderRadius.circular(16),
               child: Container(

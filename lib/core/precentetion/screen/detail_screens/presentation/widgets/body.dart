@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_coffee_store/core/domain/controlls/selected_item.dart';
 import 'package:get/get.dart';
 
+import 'body/choice_size.dart';
 import 'body/img_detail.dart';
 import 'body/rating_with_icons.dart';
+import 'body/text_description.dart';
 import 'body/text_detail.dart';
 
 class DetailBody extends StatelessWidget {
@@ -29,6 +31,14 @@ class DetailBody extends StatelessWidget {
             const Divider(
               color: Color(0xFFEAEAEA),
               thickness: 2,
+            ),
+            const SizedBox(height: 20),
+            TextDescription(
+              description: controller.selectedItem.value.description,
+            ),
+            const SizedBox(height: 20),
+            ChoiceSize(
+              sizes: controller.selectedItem.value.sizes,
             ),
           ],
         ),

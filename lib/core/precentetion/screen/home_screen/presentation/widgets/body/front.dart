@@ -16,7 +16,8 @@ class _FrontBodyState extends State<FrontBody> {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: const EdgeInsets.all(30),
+      //  Тут бил конст
+      padding: EdgeInsets.all(30),
       child: Column(
         children: [
           LocationAndProfile(),
