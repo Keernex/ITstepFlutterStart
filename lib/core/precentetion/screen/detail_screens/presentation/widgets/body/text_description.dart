@@ -22,23 +22,12 @@ class TextDescription extends StatelessWidget {
               fontWeight: FontWeight.w700),
         ),
         const SizedBox(height: 20),
-        ScrollableTextWidget(
-          children: [
-            SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  Text(
-                    description,
-                    style: GoogleFonts.sora(
-                      fontSize: 14,
-                      color: const Color(0xFF9B9B9B),
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
+        Text(
+          description,
+          style: GoogleFonts.sora(
+              fontSize: 14,
+              color: const Color(0xFF9B9B9B),
+              fontWeight: FontWeight.w400),
         ),
       ],
     );
